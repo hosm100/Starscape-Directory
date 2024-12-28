@@ -7122,7 +7122,7 @@ const jd = () => {
         return w && S
     }).sort((m, w) => s === "name" ? m.FullName.localeCompare(w.FullName) : s === "price" ? m.Value - w.Value : 0);
     return Ve.useEffect(() => {
-        fetch("/data.json").then(m => m.json()).then(m => {
+        fetch("data.json").then(m => m.json()).then(m => {
             const w = m.flat();
             n(w)
         }).catch(m => console.error("Error loading items:", m))
