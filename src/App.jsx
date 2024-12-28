@@ -1,9 +1,12 @@
-import './App.css'
+import React from 'react';
+import ItemDirectory from './components/ItemDirectory';
 
-export default function App() {
+function App() {
   return (
-    <main>
-      React ⚛️ + Vite ⚡ + Replit
-    </main>
-  )
+    <div className="min-h-screen bg-gray-900">
+      <ItemDirectory />
+    </div>
+  );
 }
+
+export default App;
